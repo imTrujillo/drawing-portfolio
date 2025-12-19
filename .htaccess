@@ -1,6 +1,0 @@
-<IfModule mod_rewrite.c>
-  RewriteEngine On # Si la URL contiene /drawing-portfolio/public/assets/
-  RewriteCond %{REQUEST_URI} ^/drawing-portfolio/public/assets/(.*)$ # Redirige
-  a /assets/ manteniendo el resto de la ruta RewriteRule
-  ^drawing-portfolio/public/assets/(.*)$ /assets/$1 [L,R=301]
-</IfModule>

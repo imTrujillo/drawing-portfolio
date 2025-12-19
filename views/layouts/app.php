@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Steven's Gallery</title>
 
+  <link rel="icon" type="image/png" href="/drawing-portfolio/public/assets/images/color.png">
   <link rel="stylesheet" href="/drawing-portfolio/public/assets/css/app.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
