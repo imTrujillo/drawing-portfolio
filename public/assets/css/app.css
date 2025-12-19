@@ -1,0 +1,44 @@
+html {
+  scroll-behavior: smooth;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+[x-cloak] {
+  display: none !important;
+}
+
+.nav-active {
+  padding: 0.5rem 0.75rem;
+  background: linear-gradient(to bottom, #94a3b8, transparent);
+  border-radius: 0.125rem;
+  font-size: 1.125rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: white;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #c0bca7 transparent;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #c4c0ad;
+  border-radius: 10px;
+}
