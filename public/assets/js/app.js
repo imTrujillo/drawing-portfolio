@@ -5,8 +5,6 @@ document.addEventListener("DOMContentLoaded", () => {
     hideClass: "f-fadeOut",
     dragToClose: true,
   });
+  new Rellax(".rellax");
+  ScrollReveal().reveal(".reveal");
 });
-
-new Rellax(".rellax");
-
-ScrollReveal().reveal(".reveal");

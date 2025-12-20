@@ -17,10 +17,17 @@ p {
   background: linear-gradient(to bottom, #94a3b8, transparent);
   border-radius: 0.125rem;
   font-size: 1.125rem;
+
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 0.2em;
   color: white;
+}
+
+@media (max-width: 960px) {
+  .nav-active {
+    font-size: 0.775rem;
+  }
 }
 
 * {

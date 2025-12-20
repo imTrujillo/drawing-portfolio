@@ -22,10 +22,10 @@
           <div class="flex space-x-4">
             <!-- Current: "bg-gray-950/50 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
             <!-- <a href="#inicio" class="px-3 py-2 text-lg font-light uppercase tracking-widest text-gray-800 hover:bg-white/5 hover:text-white">Inicio</a> -->
-            <a href="#acerca-de-mi" class="px-3 py-2 text-lg font-light uppercase tracking-widest text-gray-800 hover:bg-white/5 hover:text-white">Acerca de mí</a>
-            <a href="#galeria" class=" px-3 py-2 text-lg font-light uppercase tracking-widest text-gray-800 hover:bg-white/5 hover:text-white">Galería</a>
-            <a href="#precios" class="px-3 py-2 text-lg font-light uppercase tracking-widest text-gray-800 hover:bg-white/5 hover:text-white">Precios</a>
-            <a href="#contacto" class="px-3 py-2 text-lg font-light uppercase tracking-widest text-gray-800 hover:bg-white/5 hover:text-white">Contacto</a>
+            <a href="#acerca-de-mi" class="px-3 py-2 text-sm lg:text-lg font-light uppercase tracking-widest text-gray-800 hover:bg-white/5 hover:text-white">Acerca de mí</a>
+            <a href="#galeria" class=" px-3 py-2 text-sm lg:text-lg font-light uppercase tracking-widest text-gray-800 hover:bg-white/5 hover:text-white">Galería</a>
+            <a href="#precios" class="px-3 py-2 text-sm lg:text-lg font-light uppercase tracking-widest text-gray-800 hover:bg-white/5 hover:text-white">Precios</a>
+            <a href="#contacto" class="px-3 py-2 text-sm lg:text-lg font-light uppercase tracking-widest text-gray-800 hover:bg-white/5 hover:text-white">Contacto</a>
           </div>
         </div>
       </div>
@@ -39,7 +39,7 @@
       <!-- <a href="#inicio" class="block px-3 py-2 text-lg font-light uppercase tracking-widest text-gray-800 hover:bg-white/5 hover:text-white">Inicio</a> -->
       <a href="#acerca-de-mi" class="block px-3 py-2 text-lg font-light uppercase tracking-widest text-gray-800 hover:bg-white/5 hover:text-white">Acerca de mí</a>
       <a href="#galeria" class="block px-3 py-2 text-lg font-light uppercase tracking-widest text-gray-800 hover:bg-white/5 hover:text-white">Galería</a>
-      <a href="#precio" class="block px-3 py-2 text-lg font-light uppercase tracking-widest text-gray-800 hover:bg-white/5 hover:text-white">Precios</a>
+      <a href="#precios" class="block px-3 py-2 text-lg font-light uppercase tracking-widest text-gray-800 hover:bg-white/5 hover:text-white">Precios</a>
       <a href="#contacto" class="block px-3 py-2 text-lg font-light uppercase tracking-widest text-gray-800 hover:bg-white/5 hover:text-white">Contacto</a>
     </div>
   </el-disclosure>

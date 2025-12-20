@@ -3,7 +3,7 @@
     Precios y Categorías
   </h2>
 
-  <p class="text-center text-slate-600 max-w-2xl mx-auto mb-12">
+  <p class="text-center text-sm md:text-lg text-slate-600 max-w-2xl mx-auto mb-12">
     Escoge el estilo de tu dibujo. Será entregado lo más pronto posible.
   </p>
 
@@ -51,9 +51,9 @@
     contenedor.innerHTML += `
       <div class="group relative bg-white rounded-lg shadow-lg relative reveal transform hover:translate-y-[-5px] transition-all duration-300">
 
-        <img class="h-30 absolute top-2 -left-8 md:-left-16 opacity-0 -translate-x-[8px] group-hover:translate-x-0 group-hover:opacity-100 group-active:translate-x-0 group-active:opacity-100 transition-all duration-300" src="${basePath + cat.images[0]}" alt="${cat.titulo}" />
-        <img class="h-20 absolute bottom-2 -right-6 md:-right-10 opacity-0 translate-x-[8px] group-hover:translate-x-0 group-hover:opacity-100 group-active:translate-x-0 group-active:opacity-100 transition-all duration-300" src="${basePath + cat.images[1]}" alt="${cat.titulo}" />
-        
+        <img class="h-30 absolute top-2 -left-8 md:-left-16 md:opacity-0 -translate-x-[8px] group-hover:translate-x-0 group-hover:opacity-100  transition-all duration-300" src="${basePath + cat.images[0]}" alt="${cat.titulo}" />
+        <img class="h-20 absolute bottom-2 -right-6 md:-right-10 md:opacity-0 translate-x-[8px] group-hover:translate-x-0 group-hover:opacity-100  transition-all duration-300" src="${basePath + cat.images[1]}" alt="${cat.titulo}" />
+
         ${cat.popular ? `
         <div class="absolute top-0 right-0 bg-slate-600 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">
           Popular
@@ -61,13 +61,13 @@
 
         <div class="px-6 py-8">
           <div class="text-center">
-            <h2 class="text-2xl uppercase text-slate-600">${cat.titulo}</h2>
-            <p class="mt-2 text-slate-600">${cat.desc}</p>
+            <h2 class="text-xl md:text-2xl uppercase text-slate-600">${cat.titulo}</h2>
+            <p class="text-sm md:text-lg mt-2 text-slate-600">${cat.desc}</p>
           </div>
 
           <div class="mt-8 text-center">
-            <span class="text-slate-600">desde</span>
-            <span class="text-4xl font-bold text-slate-900">$${cat.precio}</span>
+            <span class="text-sm md:text-lg text-slate-600">desde</span>
+            <span class="text-3xl md:text-4xl font-bold text-slate-900">$${cat.precio}</span>
           </div>
 
           <ul class="mt-8 space-y-4">
@@ -77,7 +77,7 @@
                      viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>
-                <span class="ml-2 text-slate-700">${f}</span>
+                <span class="text-sm md:text-lg ml-2 text-slate-700">${f}</span>
               </li>
             `).join('')}
           </ul>

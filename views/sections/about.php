@@ -7,11 +7,11 @@
           ¡Hola! 👋 <br />Soy
           Steven Trujillo
         </h2>
-        <p class="max-w-lg mt-3 text-xl leading-relaxed text-gray-600 md:mt-8">
+        <p class="max-w-lg mt-3 text-sm md:text-lg lg:text-xl text-gray-600 md:mt-8">
           Soy estudiante universitario y participo activamente en talleres artísticos. En mis ratos libres me dedico al dibujo como artista amateur. Cultivo esta pasión desde los 10 años, y mi proceso de aprendizaje ha sido principalmente autodidacta.
         </p>
 
-        <p class="mt-4 text-xl text-gray-600 md:mt-8">
+        <p class="mt-4 text-sm md:text-lg lg:text-xl text-gray-600 md:mt-8">
           Cada imagen es un fragmento del tiempo: una mezcla de gustos, emociones, y expresiones grabadas en un canvas o en el papel.
           En cada trazo, en cada color, hay un significado que trata de interpretar la realidad.</p>
       </div>

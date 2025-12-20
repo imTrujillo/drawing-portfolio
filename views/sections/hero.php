@@ -1,6 +1,6 @@
 <header class=" relative h-screen min-h-[400px] md:h-[600px] w-screen"
   id="inicio">
-  <div class="rellax w-full h-full absolute inset-0 bg-cover bg-center -z-10 " style="background-image: url(/drawing-portfolio/public/assets/images/header.png);" data-rellax-speed="-3"></div>
+  <div class="rellax w-full h-full absolute inset-0 bg-cover bg-[30%] md:bg-center -z-10 " style="background-image: url(/drawing-portfolio/public/assets/images/header.png);" data-rellax-speed="-3"></div>
 
   <div class="relative max-w-[70rem] mx-auto h-full">
     <div class="absolute right-0 bottom-0 translate-y-[-100%] px-6 py-2">

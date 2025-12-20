@@ -27,7 +27,7 @@
           <li @click.prevent="openTab = <?= $cat['id'] ?>"
             :class="{ '-mb-px': openTab === <?= $cat['id'] ?> }" class="-mb-px mr-1">
             <a href="#" :class="openTab === <?= $cat['id'] ?> ? activeClasses : inactiveClasses"
-              class="pb-2 font-light uppercase text-sm md:text-lg text-center tracking-widest mx-4 ">
+              class="pb-2 font-light uppercase text-xs md:text-sm lg:text-lg text-center tracking-widest mx-1 md:mx-4 ">
               <?= htmlspecialchars($cat['name']) ?>
             </a>
           </li>
@@ -37,7 +37,7 @@
       <div class="w-full pb-8">
         <?php foreach ($categorias as $cat): ?>
           <div x-show="openTab === <?= $cat['id'] ?>">
-            <p class="text-center text-slate-600 max-w-2xl mx-auto mt-4 mb-8">
+            <p class="text-center text-sm md:text-lg text-slate-600 max-w-2xl mx-auto mt-4 mb-8">
               <?= $cat['description'] ?>
             </p>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 auto-rows-[180px] gap-4 grid-flow-dense max-w-[70rem] mx-auto">
@@ -55,14 +55,15 @@
                 $layout = $layouts[array_rand($layouts)];
               ?>
                 <div class=" relative overflow-hidden rounded-2xl shadow-lg cursor-pointer group <?= $layout ?>"
+
                   @click="isModalOpen = true; foto = <?= htmlspecialchars(json_encode($foto), ENT_QUOTES, 'UTF-8') ?>">
                   <img
                     src="<?= $foto['image'] ?>"
                     alt="<?= $foto['name'] ?>"
-                    class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 active:scale-105">
+                    class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
 
 
-                  <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 active:opacity-100 transition-opacity duration-300">
+                  <div class="absolute inset-0 bg-black/40 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 showDetails">
                     <button
                       aria-label="Favorito"
                       class="absolute top-0 right-0 p-4 transition-colors text-slate-100">
@@ -134,7 +135,7 @@
               @click="toggleFavorito(foto.id)"
               aria-label="Favorito"
               :class="favoritos.includes(foto.id) ? 'text-rose-600' : 'text-slate-600 hover:text-slate-500'"
-              class="transition-colors">
+              class="transition-colors pt-4">
               <svg class="w-10 h-10 transition-transform" :class="favoritos.includes(foto.id) ? 'scale-110' : ''" :fill="favoritos.includes(foto.id) ? 'currentColor' : 'none'" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
               </svg>
