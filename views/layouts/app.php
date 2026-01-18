@@ -9,10 +9,10 @@
   <link rel="icon" type="image/png" href="/drawing-portfolio/public/assets/images/color.png">
   <link rel="stylesheet" href="/drawing-portfolio/public/assets/css/app.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" />
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <script src="//unpkg.com/alpinejs"></script>
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/rellax/rellax.min.js"></script>
   <script src="/drawing-portfolio/public/assets/js/app.js" defer></script>
 
 </head>
@@ -31,6 +31,7 @@
   ?>
 
 
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
   <script src="https://unpkg.com/scrollreveal"></script>
 </body>

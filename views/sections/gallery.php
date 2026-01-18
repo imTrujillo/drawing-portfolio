@@ -1,13 +1,16 @@
-<div class="bg-[#bec4c0] py-10 reveal">
-  <div class="container mx-auto px-4 py-8">
-    <h2 class="flex justify-center w-full uppercase text-slate-500 text-4xl tracking-widest mb-4 scroll-mt-28" id="galeria">
-      Galería
-    </h2>
+<section class="bg-linear-to-b from-gray-400 to-gray-100 py-10 reveal">
+  <div class="container mx-auto place-items-center px-4 py-8 text-white/70 text-shadow scroll-mt-12">
+
+    <?php
+    $id = "galeria";
+    $label = "Galería";
+    include __DIR__ . "/../components/title.php"; ?>
+
 
     <div x-data="{ 
             openTab: <?= $categorias[0]['id'] ?>,
-            activeClasses: ' px-3 border-b text-slate-600 hover:text-black/50 transition-all duration-200',
-            inactiveClasses: 'text-slate-500 hover:text-slate-700 hover:border-b transition-all duration-100',
+            activeClasses: ' px-3 border-b text-white hover:text-white/50 transition-all duration-200',
+            inactiveClasses: 'text-white/70 hover:text-white/70 hover:border-b transition-all duration-100',
             isModalOpen: false,
             foto: {},
             favoritos: JSON.parse(localStorage.getItem('favoritos')) || [],
@@ -22,12 +25,12 @@
         }"
       x-effect="document.body.style.overflow = isModalOpen ? 'hidden' : 'auto'"
       class="p-6">
-      <ul class="flex justify-center items-center divide-x divide-slate-600/60">
+      <ul class="flex justify-center items-center divide-x divide-white">
         <?php foreach ($categorias as $cat): ?>
           <li @click.prevent="openTab = <?= $cat['id'] ?>"
             :class="{ '-mb-px': openTab === <?= $cat['id'] ?> }" class="-mb-px mr-1">
             <a href="#" :class="openTab === <?= $cat['id'] ?> ? activeClasses : inactiveClasses"
-              class="pb-2 font-light uppercase text-xs md:text-sm lg:text-lg text-center tracking-widest mx-1 md:mx-4 ">
+              class="pb-2 font-bold uppercase text-xs md:text-sm lg:text-lg text-center tracking-widest mx-1 md:mx-4 ">
               <?= htmlspecialchars($cat['name']) ?>
             </a>
           </li>
@@ -37,24 +40,17 @@
       <div class="w-full pb-8">
         <?php foreach ($categorias as $cat): ?>
           <div x-show="openTab === <?= $cat['id'] ?>">
-            <p class="text-center text-sm md:text-lg text-slate-600 max-w-2xl mx-auto mt-4 mb-8">
+            <p class="text-center text-sm md:text-lg max-w-2xl mx-auto mt-4 mb-8">
               <?= $cat['description'] ?>
             </p>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 auto-rows-[180px] gap-4 grid-flow-dense max-w-[70rem] mx-auto">
+            <div class="columns-1 md:columns-2 lg:columns-3 gap-4 max-w-[70rem] mx-auto">
               <?php
-              $layouts = [
-                'md:col-span-2 md:row-span-2',
-                'md:row-span-2',
-                'lg:row-span-3',
-                ''
-              ];
 
               $fotos = Picture::getPicturesByCategory($cat['id']);
 
               foreach ($fotos as $foto):
-                $layout = $layouts[array_rand($layouts)];
               ?>
-                <div class=" relative overflow-hidden rounded-2xl shadow-lg cursor-pointer group <?= $layout ?>"
+                <div class=" relative overflow-hidden rounded-2xl shadow-lg cursor-pointer group break-inside-avoid mb-4"
 
                   @click="isModalOpen = true; foto = <?= htmlspecialchars(json_encode($foto), ENT_QUOTES, 'UTF-8') ?>">
                   <img
@@ -95,7 +91,7 @@
         class="fixed inset-0 z-50 flex items-center justify-center bg-black/70 px-4 overflow-hidden"
         style="display: none;">
 
-        <div class="relative bg-gray-100 flex flex-col md:flex-row rounded-lg max-w-4xl max-h-[90vh] overflow-hidden">
+        <div class="relative bg-gray-300 flex flex-col md:flex-row rounded-lg max-w-4xl max-h-[90vh] overflow-hidden">
 
           <!-- Status Badge -->
           <div class="absolute top-0 right-0  text-white text-xs font-bold px-3 py-1 rounded-bl-lg z-10"
@@ -147,3 +143,4 @@
       </div>
     </div>
   </div>
+</section>

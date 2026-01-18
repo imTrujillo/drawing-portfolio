@@ -4,8 +4,10 @@ html {
 }
 
 p {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+  font-size: "0.5rem";
 }
 
 [x-cloak] {
@@ -13,21 +15,11 @@ p {
 }
 
 .nav-active {
-  padding: 0.5rem 0.75rem;
-  background: linear-gradient(to bottom, #94a3b8, transparent);
+  padding: 0 0.45rem;
+  background: #94a3b8;
   border-radius: 0.125rem;
-  font-size: 1.125rem;
-
   font-weight: 300;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
   color: white;
-}
-
-@media (max-width: 960px) {
-  .nav-active {
-    font-size: 0.775rem;
-  }
 }
 
 * {

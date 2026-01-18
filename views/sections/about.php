@@ -1,20 +1,21 @@
-<section class="pt-6 bg-[#b3b8b4] w-full overflow-hidden reveal">
+<section class="pt-6 bg-linear-to-b from-gray-500 to-gray-400 text-white/80 w-full overflow-hidden reveal">
   <div class=" mx-auto px-6 max-w-[70rem]">
     <div class="grid items-center grid-cols-1 md:grid-cols-2">
 
-      <div>
-        <h2 class="flex w-full uppercase text-slate-500 text-2xl md:text-4xl tracking-widest mb-4 scroll-mt-28" id="acerca-de-mi">
-          ¡Hola! 👋 <br />Soy
-          Steven Trujillo
-        </h2>
-        <p class="max-w-lg mt-3 text-sm md:text-lg lg:text-xl text-gray-600 md:mt-8">
-          Soy estudiante universitario y participo activamente en talleres artísticos. En mis ratos libres me dedico al dibujo como artista amateur. Cultivo esta pasión desde los 10 años, y mi proceso de aprendizaje ha sido principalmente autodidacta.
-        </p>
+      <div class="mx-auto">
+        <?php
+        $id = "acerca-de-mi";
+        $label = " ¡Hola! 👋 <br /> Soy Steven Trujillo";
+        $color = "text-white/80";
+        include __DIR__ . "/../components/title.php"; ?>
 
-        <p class="mt-4 text-sm md:text-lg lg:text-xl text-gray-600 md:mt-8">
+        <p class="max-w-lg mt-3 text-sm md:text-lg lg:text-xl text-gray-600 md:mt-8 text-white/70 text-justify">
+          Soy estudiante universitario y participo activamente en talleres artísticos. En mis ratos libres me dedico al dibujo como artista amateur. Cultivo esta pasión desde los 10 años, y mi proceso de aprendizaje ha sido principalmente autodidacta. <br />
           Cada imagen es un fragmento del tiempo: una mezcla de gustos, emociones, y expresiones grabadas en un canvas o en el papel.
-          En cada trazo, en cada color, hay un significado que trata de interpretar la realidad.</p>
+          En cada trazo, en cada color, hay un significado que trata de interpretar la realidad.
+        </p>
       </div>
+
 
       <div class="relative">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" class="absolute inset-x-0 md:bottom-0 -translate-x-1/2 left-1/2 rotate-180 h-150 md:h-120 lg:h-150">
